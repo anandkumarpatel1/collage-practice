@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        body {
+            background: rgb(39, 236, 230);
+        }
+
+        div {
+            display: flex;
+            margin-left: 25%;
+            background: rgb(12, 209, 240);
+            width: 50%;
+            border-radius: 40px;
+            box-shadow: 3px 3px red, -1em 0 .4em olive;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form1 {
+            justify-content: center;
+            align-items: center;
+            margin-left: 40%;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="formstyle">
+        <form name="form1">
+            <input type="text" name="answer" id="calc">
+            <br><br>
+
+            <!-- This is first row of clac -->
+            <input type="button" value="1" onclick="form1.answer.value += '1'">
+            <input type="button" value="2" onclick="form1.answer.value += '2'">
+            <input type="button" value="3" onclick="form1.answer.value += '3'">
+            <input type="button" value="+" onclick="form1.answer.value += '+'">
+            <br><br>
+
+            <!-- This is second row of clac -->
+            <input type="button" value="4" onclick="form1.answer.value += '4'">
+            <input type="button" value="5" onclick="form1.answer.value += '5'">
+            <input type="button" value="6" onclick="form1.answer.value += '6'">
+            <input type="button" value="-" onclick="form1.answer.value += '-'">
+            <br><br>
+
+            <!-- This is third row of clac -->
+            <input type="button" value="7" onclick="form1.answer.value += '7'">
+            <input type="button" value="8" onclick="form1.answer.value += '8'">
+            <input type="button" value="9" onclick="form1.answer.value += '9'">
+            <input type="button" value="*" onclick="form1.answer.value += '*'">
+            <br><br>
+
+            <!-- This is fourth row of clac -->
+            <input type="button" value="/" onclick="form1.answer.value += '/'">
+            <input type="button" value="0" onclick="form1.answer.value += '0'">
+            <input type="button" value="." onclick="form1.answer.value += '.'">
+            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
+            <br><br>
+            <!-- this is fifth row of calc -->
+            <input type="button" id="clear" onclick="form1.answer.value = '' " value="clear all">
+        </form>
+    </div>
+</body>
+
+</html>
