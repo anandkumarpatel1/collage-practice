@@ -7,18 +7,9 @@ int main()
     {
         for (int j = 1; j <= n; j++)
         {
-            if (j >= i)
-            {
-                printf("*");
-            }
-            else
-            {
-                printf(" ");
-            }
-
+            printf("*");
         }
         printf("\n");
     }
-
     return 0;
 }

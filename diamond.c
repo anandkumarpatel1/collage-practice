@@ -1,26 +1,30 @@
 #include <stdio.h>
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    int k = (n-2);
-    for (int i = 0; i < n; i++)
+int n,l = 0;
+scanf("%d",&n);
+int k = 2*n-1;
+for (int i = 1; i <= k; i++)
+{
+    if (i > n)
     {
-        for (int j = 0; j <= i; j++)
+        l--;
+    }
+    else{
+        l++;
+    }
+    for (int j = 1; j <= n; j++)
+    {
+        if (j >= 1 && j <= l)
         {
             printf("*");
         }
-        printf("\n");
-    }
-    for (int i = k; i != 0; i--)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            printf("*");
+        else{
+            printf(" ");
         }
-        printf("\n");
     }
-    printf("*");
+    printf("\n");
+}
 
-    return 0;
+return 0 ;
 }
